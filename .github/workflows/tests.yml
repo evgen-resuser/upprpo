@@ -23,7 +23,9 @@ jobs:
           cmake-version: '3.16.x'
       - name: Build project
         run: |
-          mkdir build & cd build
-          cmake .. & cmake --build .
+          mkdir build
+          cd build
+          cmake ..
+          cmake --build .
           ./lab1_test
           
